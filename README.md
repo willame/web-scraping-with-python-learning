@@ -14,13 +14,13 @@ web-scraping-with-python-learning book source
 
 我们可以使用 urllib2 支持代理
 
-'''
+```
 proxy = ...
 opener = urllib2.build_opener()
 proxy_params = {urlparse.urlparse(url).scheme: proxy}
 opener.add_handler(urllib2.ProxyHandler(proxy_params))
 response = opener.open(request)
-'''
+```
 
 
 [原文传送门](http://www.aobosir.com/blog/2016/12/25/python-Web-crawler-proxy-support/)
